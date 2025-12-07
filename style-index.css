@@ -29,9 +29,10 @@ body {
   width: 100%;
   padding: 12px;
   margin-top: 12px;
-  border-radius: 8px;
-  border: 2px solid #dcdcdc;
+  border-radius: 10px;
+  border: 2px solid #c7b9b9;
   outline: none;
+  margin-left: -13px;
 }
 
 .auth-box input:focus {
@@ -55,6 +56,6 @@ button:hover {
 
 .hint {
   margin-top: 12px;
-  font-size: 8px;
-  color: #777;
+  font-size: 10px;
+  color: #19aab4;
 }
