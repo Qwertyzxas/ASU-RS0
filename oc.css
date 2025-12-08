@@ -1,3 +1,10 @@
+@media (max-width: 540px) {
+  header {
+    position: static;
+    width: 520px;
+    padding: 20px;
+  }
+}
 /* Общий стиль */
 body {
   margin: 0;
@@ -14,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 11px;
+  font-size: 15px;
 }
 
 .logo {
