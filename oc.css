@@ -1,7 +1,8 @@
-@media (max-width: 540px) {
+@media (max-width: 430px) {
   header {
     position: static;
-    width: 520px;
+    max-width: 100%;
+    width: 510px;
     padding: 20px;
   }
 }
