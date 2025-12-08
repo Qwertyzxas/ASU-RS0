@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
+@media (max-width: 570px) {
+    header {
+        position: static;
+        width: 510px;
+        padding: 20px;
+    }
+}
 body {
   margin: 0;
   font-family: Montserrat, sans-serif;
@@ -14,7 +21,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 11px;
+    font-size: 15px;
 }
 
 nav a {
