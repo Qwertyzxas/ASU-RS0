@@ -1,7 +1,7 @@
-@media (max-width: 430px) {
+@media (max-width: 575px) {
     header {
         position: static;
-        width: 680px;
+        width: 100%;
         padding: 20px;
     }
 }
@@ -18,7 +18,8 @@ body {
   background: #0d2c54;
   color: white;
   padding: 28px 25px;
-  display: flex ;
+  display: grid ;
+  grid-column: auto;
   justify-content: space-between;
   align-items: center;
   font-size: 15px;
