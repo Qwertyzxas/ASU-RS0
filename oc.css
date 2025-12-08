@@ -1,13 +1,9 @@
-@media (max-width: 770px) {
-  body {
-    position: static;
-    width: 770px;
-    padding: 0px;
-    margin: 0;
-    background: #f3f6fb;
-    font-family: Arial, sans-serif;
-    color: #333;
-  }
+/* Общий стиль */
+body {
+  margin: 0;
+  background: #f3f6fb;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 /* Шапка */
