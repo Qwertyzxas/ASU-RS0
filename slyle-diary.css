@@ -1,12 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
 
 @media (max-width: 572px) {
-    header {
-        position: static;
-        width: 510px;
-        padding: 20px;
-        font-size: clamp(1rem, 0.539rem + 1.842vw, 2.75rem);
-    }
+  header {
+    position: static;
+    width: 515px;
+    padding: 20px;
+  }
 }
 body {
   margin: 0;
@@ -16,20 +15,20 @@ body {
 
 /* Header */
 header {
-    background: #0d2c54;
-    color: white;
-    padding: 15px 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 15px;
+  background: #0d2c54;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
 }
 
 nav a {
-    margin-left: 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 nav a.active,

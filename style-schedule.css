@@ -1,7 +1,17 @@
-body {
+@media (max-width: 515px) {
+  header {
+    position: static;
+    width: 100%;
+    padding: 20px;
+  }
+}
+ 
+  body {
   margin: 0;
   font-family: Montserrat, sans-serif;
   background: #f4f6fb;
+  width: 100%;
+  padding: 0px;
 }
 
 header {
