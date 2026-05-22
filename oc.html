@@ -19,201 +19,353 @@
       </nav>
     </header>
 
-    <main class="content">
-      <h1>Итоговые оценки</h1>
+<div id="report" ng-class="{'report--max-height': ctrl.needScroll}" ng-show="ctrl.reportHtml &amp;&amp; !ctrl.bigReportHtml" ng-bind-html="ctrl.reportHtml | trusted" class="ng-binding">
 
-      <div class="student-box">
-        <p><b>ФИО:</b> Шарова Алёна Витальевна</p>
-        <p><b>Класс:</b> 10Л</p>
-        <p><b>Учебный год:</b> 2025–2026</p>
-      </div>
-      <div style="overflow-x: auto">
-        <table class="grades-table">
-          <thead>
-            <tr>
-              <th>№</th>
-              <th>Предмет</th>
-              <th>1 триместр</th>
-              <th>2 триместр</th>
-              <th>3 триместр</th>
-              <th>Год. оценка</th>
-              <th class="curcl-br">Итог. оценка</th>
-            </tr>
-          </thead>
+<div>
+        <h5 class="report-title-school">муниципальное бюджетное общеобразовательное учреждение городского округа Тольятти "Школа №5 имени генерала - майора М.Ф.Федорова"</h5>
 
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>Вероятность и статистика</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
+    <h2 align="center" class="main-report-title">Итоговые отметки</h2>
 
-            <tr>
-              <td>2</td>
-              <td>Иностранный язык</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
+    <br>
 
-            <tr>
-              <td>3</td>
-              <td>Основы безоп. и защита Родины</td>
-              <td class="grade grade-5">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="avg avg-good">5</td>
-            </tr>
+</div>
 
-            <tr>
-              <td>4</td>
-              <td>Русский язык</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
 
-            <tr>
-              <td>5</td>
-              <td>Учимся писать правильно</td>
-              <td class="grade grade-5">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="avg avg-good">5</td>
-            </tr>
+    
 
-            <tr>
-              <td>6</td>
-              <td>Литература</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
 
-            <tr>
-              <td>7</td>
-              <td>Геометрия</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
 
-            <tr>
-              <td>8</td>
-              <td>Алгебра</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
+        <table cellspacing="10px">
+            <tbody><tr>
+                <td>
+                    <div id="photowrap">
+                        <img src="data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/7gAOQWRvYmUAZMAAAAAB/9sAhAACAgICAgICAgICAwICAgMEAwICAwQFBAQEBAQFBgUFBQUFBQYGBwcIBwcGCQkKCgkJDAwMDAwMDAwMDAwMDAwMAQMDAwUEBQkGBgkNCwkLDQ8ODg4ODw8MDAwMDA8PDAwMDAwMDwwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAz/wAARCABkAGQDAREAAhEBAxEB/8QAewABAQACAwEBAAAAAAAAAAAAAAcFCAIDBgQJAQEAAAAAAAAAAAAAAAAAAAAAEAABAwIEAQkEBQ0AAAAAAAABAAIDEQQhMQUGEkFRcROj01UWB2EiMhTwciN0FYGRsfFCUrIzsyQlNTYRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AP38QEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBB891dW9lbzXd3M2C3gbxSyuyA+mQQRrWPUvUJ3yRaNCyyt8Ay6laHzGhrUA1Y2owoQelBhIPUDdMUrJJL6O6Y34oJYYwx2HKY2sd+YoKntbedpuD+1mYLPU2NqYK1ZKAPedGTjhmWnEDnxQe1QEBAQEBAQEBBH/U/VJQ+w0eNxbEWfNXAH7RqWsB6KE/qQSNAQd9rczWdzBd27zHPbvbJE8cjmmoQbVafdtv7GzvWjhbdwsmDebjaDT8lUH1oCAgICAgICCEepv8Av7b7jH/UkQTpAQEG0G2f+e0X7lD/AABBnEBAQEBAQEBBCfU4H8etTQ0Niyh6JJEE5QEBBtDtoFu39FDgQfkocD9QIM2gICAgICAgIPG7w2uNxWsL4JGQX9nXqZH14HMd8TXEAkZVBp+lBrqgIPWbR20dx3r2vmbFZ2ZY68GPG5rq0azCmPDQknD2oNjmMZGxkcbQxkbQ1jRkABQAIOSAgICAgICDi97I2OkkcGMYC573GgAGJJJyogl25fUO3gbLY6FS5nIcyTUD/LZyfZ/vHmOX1kEWQEHo9t7kutt3ck8MTbiG4AbdW7iRxBpqC1wyIx5D0IL7om4tL1+EyWE/2rBWa0k92VmWJbU1GOYqEGcQEBAQEBBgte3Dp+3rZs965zpJai2tmCrpHClQDkAK4koITuDd2q6+50cjza2FfcsIieEitR1hw4yKDPDmAQeWQEBAQd0FxPazMuLaZ9vPGaxzRuLXNwpgRjkgru3PUdshjs9faGPODdSjHunm6xjRh0tw9gzQVnPEYgoCAgICCcb/ANA1bW/wo6Zai5+W64TDjYwjj4KfG5tfhOSCc+Q91+FdvB3iB5D3X4V28HeIHkPdfhXbwd4geQ91+FdvB3iB5D3X4V28HeIHkPdfhXbwd4gDYW66j/FU9vXwd4g2KjaWRsac2tANPYEHNAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQf/9k=" border="0" alt="Фото" style="max-height: 100px; max-width: 100px;">
+                    </div>
+                </td>
+                <td>
+                        <span class="select"><b>Учебный год:</b> 2025/2026</span><br>
+                        <span class="select"><b>Класс:</b> 10Л</span><br>
+                    <span class="select"><b>Ученик:</b> Шарова Алена Витальевна</span><br>
+                </td>
             </tr>
-
-            <tr>
-              <td>9</td>
-              <td>Информатика</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
+        </tbody></table>
+        <br><br>
+        <table class="table-print">
+            <tbody><tr>
+                <th rowspan="2">№<br>п/п</th>
+                <th rowspan="2">Предмет</th>
+                <th colspan="3">Учебные периоды</th>
+                <th rowspan="2" colspan="1">Год. оценка</th>
+                <th colspan="1">Экз. оценка</th>
+                <th rowspan="2" colspan="1">Итог. оценка</th>
             </tr>
-
             <tr>
-              <td>10</td>
-              <td>Обществознание</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
+                    <th>1 триместр</th>
+                    <th>2 триместр</th>
+                    <th>3 триместр</th>
+            
+                        <th>Учебные сборы</th>
             </tr>
-
-            <tr>
-              <td>11</td>
-              <td>Физическая культура</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
-
-            <tr>
-              <td>12</td>
-              <td>География</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
-
-            <tr>
-              <td>13</td>
-              <td>Биология</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">5</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
-
-            <tr>
-              <td>14</td>
-              <td>Физика</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
-
-            <tr>
-              <td>15</td>
-              <td>Химия</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
-
-            <tr>
-              <td>16</td>
-              <td>История</td>
-              <td class="grade grade-5">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="grade grade-0">4</td>
-              <td class="avg avg-good">4</td>
-            </tr>
-
-            <tr>
-              <td>17</td>
-              <td>Индивидуальный проект</td>
-              <td class="grade grade-5">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="grade grade-0">5</td>
-              <td class="avg avg-good">5</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </main>
-  </body>
-</html>
+                <tr>
+                    <td>1</td>
+                    <td style="text-align: left">Биология</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td style="text-align: left">География</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td style="text-align: left">Индивидуальный проект</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                
+                    <td>
+5                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>
+5                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td style="text-align: left">Иностранный (английский) язык</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td style="text-align: left">Информатика</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>
+4                    </td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td style="text-align: left">История</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+4                
+                    <td>4
+                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td style="text-align: left">Литература</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>
+4                    </td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td style="text-align: left">Математика</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td style="text-align: left">Вероятность и статистика</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>4
+                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td style="text-align: left">Геометрия</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>4
+                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td style="text-align: left">Математика: Алгебра и начала математического анализа</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>4
+                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td style="text-align: left">Обществознание</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td style="text-align: left">Основы безопасности и защита Родины</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                
+                    <td>
+5                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>
+5                    </td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td style="text-align: left">Русский язык.</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>
+4                    </td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td style="text-align: left">Учимся писать правильно</td>
+                        <td>зач</td>
+                        <td>зач</td>
+                        <td>зач</td>
+                
+                    <td>зач
+                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>зач
+                    </td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td style="text-align: left">Физика</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>4
+                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td style="text-align: left">Физическая культура</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>
+4                    </td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td style="text-align: left">Химия</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>4</td>
+                
+                    <td>
+4                    </td>
+                            <td>
+                            </td>
+              
+                
+                    <td>4
+                    </td>
+                </tr>
+        </tbody></table>
+	
+<table class="sheet-footer">
+	<tbody><tr></tr>
+	<tr>
+		<td class="no-border cell-date">
+			<span class="smalltext"><i>Состояние на22.05.2026 16:02:03</i></span>
+		</td>
+	</tr>
+	<tr>
+		<td class="no-border cell-text">
+			<span class="smalltext">©&nbsp;<i>Сетевой Город. Образование </i>&nbsp;5.52.1 (0.27.1)</span>
+		</td>
+	</tr>
+</tbody></table></div>
